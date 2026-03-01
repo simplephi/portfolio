@@ -1,0 +1,1581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indra Fransiskus Alam - AI & Full Stack Engineer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ai-yellow': '#FFD700',
+                        'ai-blue': '#0066FF',
+                        'ai-dark': '#0A0A0A',
+                        'ai-gray': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'space': ['Space Grotesk', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-inter">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="font-space font-bold text-2xl text-ai-dark">
+                    <span class="text-ai-blue">&lt;</span>INDRA<span class="text-ai-yellow">/&gt;</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="nav-link text-ai-dark hover:text-ai-blue transition-colors">About</a>
+                    <a href="#experience" class="nav-link text-ai-dark hover:text-ai-blue transition-colors">Experience</a>
+                    <a href="#education" class="nav-link text-ai-dark hover:text-ai-blue transition-colors">Education</a>
+                    <a href="#portfolio" class="nav-link text-ai-dark hover:text-ai-blue transition-colors">Portfolio</a>
+                    <a href="#contact" class="nav-link text-ai-dark hover:text-ai-blue transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-ai-dark">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-6 py-4 space-y-4">
+                <a href="#about" class="block text-ai-dark hover:text-ai-blue">About</a>
+                <a href="#experience" class="block text-ai-dark hover:text-ai-blue">Experience</a>
+                <a href="#education" class="block text-ai-dark hover:text-ai-blue">Education</a>
+                <a href="#portfolio" class="block text-ai-dark hover:text-ai-blue">Portfolio</a>
+                <a href="#contact" class="block text-ai-dark hover:text-ai-blue">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section - Magazine Cover Style -->
+    <section id="hero" class="min-h-screen relative overflow-hidden bg-ai-dark">
+        <!-- Animated Background Grid -->
+        <div class="absolute inset-0 grid-background opacity-20"></div>
+        
+        <!-- Floating AI Elements -->
+        <div class="absolute inset-0 overflow-hidden">
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+
+        <div class="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
+            <div class="grid lg:grid-cols-2 gap-12 items-center w-full py-20">
+                <!-- Left Content -->
+                <div class="text-white space-y-8 animate-fade-in-up">
+                    <div class="inline-block">
+                        <span class="px-4 py-2 bg-ai-yellow text-ai-dark font-space font-bold text-sm tracking-wider">
+                            ISSUE #01 — 2026 EDITION
+                        </span>
+                    </div>
+                    
+                    <h1 class="font-space text-5xl md:text-7xl font-bold leading-tight">
+                        <span class="text-ai-blue">AI</span> Engineer
+                        <br>
+                        <span class="text-ai-yellow">&</span> Full Stack
+                        <br>
+                        Developer
+                    </h1>
+                    
+                    <p class="text-xl text-gray-300 max-w-lg leading-relaxed">
+                        Transforming ideas into intelligent solutions. 
+                        <span class="text-ai-yellow font-semibold">4+ years</span> of crafting digital experiences 
+                        with the power of <span class="text-ai-blue font-semibold">Artificial Intelligence</span>.
+                    </p>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="#about" class="px-8 py-4 bg-ai-blue text-white font-space font-semibold hover:bg-blue-600 transition-all transform hover:scale-105">
+                            EXPLORE MY STORY
+                        </a>
+                        <a href="#portfolio" class="px-8 py-4 border-2 border-ai-yellow text-ai-yellow font-space font-semibold hover:bg-ai-yellow hover:text-ai-dark transition-all">
+                            VIEW PORTFOLIO
+                        </a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="flex gap-8 pt-8 border-t border-gray-700">
+                        <div>
+                            <div class="text-3xl font-space font-bold text-ai-yellow counter" data-target="4">0</div>
+                            <div class="text-gray-400 text-sm">Years Experience</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-space font-bold text-ai-blue counter" data-target="25">0</div>
+                            <div class="text-gray-400 text-sm">Projects Completed</div>
+                        </div>
+                        <div>
+                            <div class="text-3xl font-space font-bold text-white counter" data-target="336">0</div>
+                            <div class="text-gray-400 text-sm">Websites Managed</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right - Profile Image -->
+                <div class="relative flex justify-center lg:justify-end animate-fade-in">
+                    <div class="relative">
+                        <!-- Magazine Frame -->
+                        <div class="absolute -inset-4 bg-gradient-to-br from-ai-blue via-ai-yellow to-ai-blue opacity-75 blur-2xl"></div>
+                        <div class="relative bg-ai-gray p-2">
+                            <div class="relative w-80 h-96 md:w-96 md:h-[500px] overflow-hidden">
+                                <!-- Profile Photo from LinkedIn -->
+                                <img src="https://media.licdn.com/dms/image/v2/D5603AQEA7bfXo_M6AQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718225804873?e=2147483647&v=beta&t=zVaJNtU5DvnXGNjcW_xFvs_YUmgRJstFrzhnY9OR6pk" 
+                                     alt="Indra Fransiskus Alam - Profile Photo" 
+                                     class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
+                                     id="hero-photo">
+                                
+                                <!-- Overlay Text -->
+                                <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-ai-dark to-transparent p-6">
+                                    <div class="text-ai-yellow font-space text-sm tracking-wider">FEATURED</div>
+                                    <div class="text-white font-space text-2xl font-bold">INDRA FRANSISKUS ALAM</div>
+                                    <div class="text-gray-300 text-sm">Software Engineer & AI Specialist</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Decorative Elements -->
+                        <div class="absolute -top-6 -right-6 w-24 h-24 border-4 border-ai-yellow"></div>
+                        <div class="absolute -bottom-6 -left-6 w-24 h-24 border-4 border-ai-blue"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section - Magazine Article Style -->
+    <section id="about" class="py-24 bg-white relative overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-gray-50 to-transparent"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-blue"></div>
+                <span class="font-space text-ai-blue font-semibold tracking-wider">ABOUT ME</span>
+                <div class="flex-1 h-px bg-gray-200"></div>
+                <span class="font-space text-gray-400">01</span>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12">
+                <!-- Left Column - Large Quote -->
+                <div class="lg:col-span-5 reveal">
+                    <div class="sticky top-32">
+                        <div class="relative">
+                            <span class="absolute -top-8 -left-4 text-9xl font-space font-bold text-ai-yellow opacity-20">"</span>
+                            <blockquote class="text-3xl md:text-4xl font-space font-bold text-ai-dark leading-tight">
+                                Transforming complex problems into 
+                                <span class="text-ai-blue">elegant solutions</span> 
+                                through the power of 
+                                <span class="text-ai-yellow">AI</span> and code.
+                            </blockquote>
+                        </div>
+                        
+                        <!-- Profile Card -->
+                        <div class="mt-12 bg-ai-dark p-6 text-white">
+                            <div class="flex items-center gap-4">
+                                <img src="https://media.licdn.com/dms/image/v2/D5603AQEA7bfXo_M6AQ/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718225804873?e=2147483647&v=beta&t=zVaJNtU5DvnXGNjcW_xFvs_YUmgRJstFrzhnY9OR6pk" 
+                                     alt="Indra Fransiskus Alam" 
+                                     class="w-16 h-16 object-cover"
+                                     id="about-photo">
+                                <div>
+                                    <div class="font-space font-bold text-lg">INDRA FRANSISKUS ALAM</div>
+                                    <div class="text-ai-yellow text-sm">AI & Full Stack Engineer</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column - Content -->
+                <div class="lg:col-span-7 space-y-8 reveal">
+                    <div class="prose prose-lg max-w-none">
+                        <p class="text-xl text-gray-600 leading-relaxed first-letter:text-6xl first-letter:font-space first-letter:font-bold first-letter:text-ai-blue first-letter:float-left first-letter:mr-3 first-letter:mt-1">
+                            Experienced Software Engineer with <strong class="text-ai-dark">+4 years</strong> as a Full Stack Developer 
+                            and <strong class="text-ai-dark">1 year</strong> of intensive study as a Machine Learning Engineer. 
+                            My expertise spans Deep Learning, Artificial Intelligence, ML Engineering, and Robotics Software Engineering, 
+                            backed by a demonstrated history of impactful work in the information technology and services industry.
+                        </p>
+
+                        <p class="text-gray-600 leading-relaxed">
+                            Throughout my career, I have cultivated essential soft skills including <span class="font-semibold text-ai-dark">Leadership</span>, 
+                            <span class="font-semibold text-ai-dark">Adaptability</span>, <span class="font-semibold text-ai-dark">Excellent Attention-to-Detail</span>, 
+                            <span class="font-semibold text-ai-dark">Teamwork</span>, and <span class="font-semibold text-ai-dark">Strategic Planning</span>. 
+                            These competencies enable me to not just write code, but to architect solutions that drive real business value.
+                        </p>
+
+                        <p class="text-gray-600 leading-relaxed">
+                            As a strong engineering professional, I am passionate about the environment we live in. 
+                            Currently, I'm on an exciting journey exploring the vast applications of AI to solve everyday problems, 
+                            making technology more accessible and beneficial for everyone.
+                        </p>
+                    </div>
+
+                    <!-- Skills Grid -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8">
+                        <div class="skill-card bg-gray-50 p-4 text-center hover:bg-ai-blue hover:text-white transition-all cursor-pointer">
+                            <div class="text-2xl font-space font-bold">AI</div>
+                            <div class="text-sm opacity-75">Artificial Intelligence</div>
+                        </div>
+                        <div class="skill-card bg-gray-50 p-4 text-center hover:bg-ai-yellow hover:text-ai-dark transition-all cursor-pointer">
+                            <div class="text-2xl font-space font-bold">ML</div>
+                            <div class="text-sm opacity-75">Machine Learning</div>
+                        </div>
+                        <div class="skill-card bg-gray-50 p-4 text-center hover:bg-ai-dark hover:text-white transition-all cursor-pointer">
+                            <div class="text-2xl font-space font-bold">FS</div>
+                            <div class="text-sm opacity-75">Full Stack Dev</div>
+                        </div>
+                        <div class="skill-card bg-gray-50 p-4 text-center hover:bg-ai-blue hover:text-white transition-all cursor-pointer">
+                            <div class="text-2xl font-space font-bold">DL</div>
+                            <div class="text-sm opacity-75">Deep Learning</div>
+                        </div>
+                    </div>
+
+                    <!-- Tech Stack -->
+                    <div class="pt-8 border-t border-gray-200">
+                        <h4 class="font-space font-bold text-ai-dark mb-4">TECH STACK</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">Python</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">JavaScript</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">TensorFlow</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">PyTorch</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">Node.js</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">React</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">YOLOv5</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">AR/VR</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">IoT</span>
+                            <span class="px-3 py-1 bg-ai-dark text-white text-sm">SQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section - Magazine Timeline -->
+    <section id="experience" class="py-24 bg-ai-dark text-white relative overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute inset-0 grid-background opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-yellow"></div>
+                <span class="font-space text-ai-yellow font-semibold tracking-wider">EXPERIENCE</span>
+                <div class="flex-1 h-px bg-gray-700"></div>
+                <span class="font-space text-gray-500">02</span>
+            </div>
+
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-space text-4xl md:text-5xl font-bold mb-4">
+                    Professional <span class="text-ai-blue">Journey</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    A timeline of my career growth, from building web applications to engineering AI solutions.
+                </p>
+            </div>
+
+            <!-- Timeline -->
+            <div class="relative">
+                <!-- Timeline Line -->
+                <div class="absolute left-8 md:left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-ai-blue via-ai-yellow to-ai-blue"></div>
+
+                <!-- Experience 1 - ML Engineer at Kredivo -->
+                <div class="relative mb-16 reveal">
+                    <div class="flex flex-col md:flex-row items-start">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <div class="inline-block bg-ai-blue px-4 py-1 text-sm font-space font-bold mb-4">
+                                CURRENT
+                            </div>
+                            <h3 class="font-space text-2xl font-bold text-ai-yellow">ML Engineer</h3>
+                            <div class="text-xl text-white mb-2">Kredivo</div>
+                            <div class="text-gray-400 mb-4">Nov 2024 - Present</div>
+                        </div>
+                        
+                        <!-- Timeline Dot -->
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-ai-blue rounded-full border-4 border-ai-dark z-10"></div>
+                        
+                        <div class="md:w-1/2 md:pl-12 ml-16 md:ml-0">
+                            <div class="bg-ai-gray p-6 border-l-4 border-ai-blue">
+                                <p class="text-gray-300 mb-4 leading-relaxed">
+                                    Leading the development of intelligent chatbot systems for Vietnam's Kredivo platform, 
+                                    enhancing customer experience through AI-powered solutions.
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-2 h-2 bg-ai-yellow mt-2 flex-shrink-0"></span>
+                                        <span class="text-gray-300"><strong class="text-white">Bot Intent Administration:</strong> Managing and optimizing bot intents for Vietnam Kredivo, ensuring accurate understanding and response to customer queries.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-2 h-2 bg-ai-yellow mt-2 flex-shrink-0"></span>
+                                        <span class="text-gray-300"><strong class="text-white">Private Notes System:</strong> Developed an intelligent private notes feature for the Kredivo Bot, enabling customer service teams to quickly identify and resolve issues efficiently.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-2 h-2 bg-ai-yellow mt-2 flex-shrink-0"></span>
+                                        <span class="text-gray-300"><strong class="text-white">Issue Messaging:</strong> Implemented proactive issue messaging system to keep users informed about platform status and stakeholder updates in real-time.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 2 - AI Engineer at KEISUUGIKEN -->
+                <div class="relative mb-16 reveal">
+                    <div class="flex flex-col md:flex-row items-start">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0 md:order-1">
+                            <div class="bg-ai-gray p-6 border-r-4 border-ai-yellow md:border-l-4 md:border-r-0">
+                                <p class="text-gray-300 mb-4 leading-relaxed">
+                                    Pioneering AI and AR solutions at KEISUUGIKEN, bridging the gap between cutting-edge 
+                                    machine learning technologies and real-world applications.
+                                </p>
+                                <ul class="space-y-3">
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-2 h-2 bg-ai-blue mt-2 flex-shrink-0"></span>
+                                        <span class="text-gray-300"><strong class="text-white">YOLOv5 Customization:</strong> Engineered custom object detection solutions using YOLOv5 for car dashboard recognition on Android platform, achieving real-time performance optimization.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-2 h-2 bg-ai-blue mt-2 flex-shrink-0"></span>
+                                        <span class="text-gray-300"><strong class="text-white">Hybrid AR Development:</strong> Created innovative Augmented Reality experiences combining marker-based and location-based technologies in a unified web application.</span>
+                                    </li>
+                                    <li class="flex items-start gap-3">
+                                        <span class="w-2 h-2 bg-ai-blue mt-2 flex-shrink-0"></span>
+                                        <span class="text-gray-300"><strong class="text-white">ML/DL Consulting:</strong> Provided expert guidance and problem-solving support for various Machine Learning and Deep Learning projects across the organization.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <!-- Timeline Dot -->
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-ai-yellow rounded-full border-4 border-ai-dark z-10"></div>
+                        
+                        <div class="md:w-1/2 md:pl-12 ml-16 md:ml-0 md:order-0 md:pr-12 md:pl-0">
+                            <div class="md:text-right">
+                                <div class="inline-block bg-ai-yellow text-ai-dark px-4 py-1 text-sm font-space font-bold mb-4">
+                                    AI SPECIALIST
+                                </div>
+                                <h3 class="font-space text-2xl font-bold text-ai-blue">AI Engineer</h3>
+                                <div class="text-xl text-white mb-2">KEISUUGIKEN</div>
+                                <div class="text-gray-400 mb-4">Jan 2022 - Present</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Experience 3 - Full Stack Developer -->
+                <div class="relative reveal">
+                    <div class="flex flex-col md:flex-row items-start">
+                        <div class="md:w-1/2 md:pr-12 md:text-right mb-8 md:mb-0">
+                            <div class="inline-block bg-white text-ai-dark px-4 py-1 text-sm font-space font-bold mb-4">
+                                FOUNDATION
+                            </div>
+                            <h3 class="font-space text-2xl font-bold text-white">Full Stack Developer</h3>
+                            <div class="text-xl text-ai-yellow mb-2">Dinas Komunikasi dan Informatika</div>
+                            <div class="text-gray-400 mb-4">Sep 2019 - Present</div>
+                        </div>
+                        
+                        <!-- Timeline Dot -->
+                        <div class="absolute left-8 md:left-1/2 transform -translate-x-1/2 w-4 h-4 bg-white rounded-full border-4 border-ai-dark z-10"></div>
+                        
+                        <div class="md:w-1/2 md:pl-12 ml-16 md:ml-0">
+                            <div class="bg-ai-gray p-6 border-l-4 border-white">
+                                <p class="text-gray-300 mb-4 leading-relaxed">
+                                    Driving digital transformation for South Konawe Regency through comprehensive web solutions, 
+                                    IoT innovations, and government technology initiatives.
+                                </p>
+                                
+                                <!-- Achievement Cards -->
+                                <div class="grid grid-cols-1 gap-4 mt-6">
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-blue transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-blue font-space font-bold text-lg">25+</span>
+                                            <span class="text-white font-semibold">Web Services</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Engineered a comprehensive web system for 25 diverse services using fullstack JavaScript, demonstrating adaptability and technical proficiency.</p>
+                                    </div>
+                                    
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-yellow transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-yellow font-space font-bold text-lg">336</span>
+                                            <span class="text-white font-semibold">Village Websites</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Orchestrated the configuration of 336 centralized village websites in South Konawe Regency, enhancing online accessibility for local communities.</p>
+                                    </div>
+                                    
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-blue transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-blue font-space font-bold text-lg">SSO</span>
+                                            <span class="text-white font-semibold">Statistical Web App</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Innovated a statistical web application with single sign-on authorization for 10 agencies, enhancing data accessibility and security.</p>
+                                    </div>
+                                    
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-yellow transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-yellow font-space font-bold text-lg">SIMBADA</span>
+                                            <span class="text-white font-semibold">Boundary System</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Designed regional boundary system facilitating conflict resolution and supporting village boundary determination for South Konawe Regency Government.</p>
+                                    </div>
+
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-blue transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-blue font-space font-bold text-lg">#3</span>
+                                            <span class="text-white font-semibold">Best Tourism - Indonesia</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Maintained and showcased the Moramo Waterfall Tourism web app, contributing to its recognition as the 3rd Best Tourism Place in Indonesia, presented to the Netherlands.</p>
+                                    </div>
+
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-yellow transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-yellow font-space font-bold text-lg">IoT</span>
+                                            <span class="text-white font-semibold">Smart Home Prototype</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Designed and implemented Smart Home prototype integrating temperature, soil moisture, and infrared sensors for automated control using NodeMCU.</p>
+                                    </div>
+
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-blue transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-blue font-space font-bold text-lg">5 VMs</span>
+                                            <span class="text-white font-semibold">Server Management</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Expertly handled 5 Virtual Machines on active PDN Servers, ensuring optimal performance for the District.</p>
+                                    </div>
+
+                                    <div class="bg-ai-dark p-4 border border-gray-700 hover:border-ai-yellow transition-colors">
+                                        <div class="flex items-center gap-3 mb-2">
+                                            <span class="text-ai-yellow font-space font-bold text-lg">SPBE</span>
+                                            <span class="text-white font-semibold">Smart City Master Plan</span>
+                                        </div>
+                                        <p class="text-gray-400 text-sm">Served as technical team coordinator for Smart City Master Plan, contributing to the Architecture & Plan Map for Electronic-Based Government Systems.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-blue"></div>
+                <span class="font-space text-ai-blue font-semibold tracking-wider">EDUCATION</span>
+                <div class="flex-1 h-px bg-gray-200"></div>
+                <span class="font-space text-gray-400">03</span>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- Education Cards -->
+                <div class="space-y-8">
+                    <h2 class="font-space text-3xl md:text-4xl font-bold text-ai-dark reveal">
+                        Academic <span class="text-ai-blue">Background</span>
+                    </h2>
+
+                    <!-- Universitas Haluoleo -->
+                    <div class="reveal bg-gray-50 p-6 border-l-4 border-ai-blue hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 bg-ai-blue flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-space text-xl font-bold text-ai-dark">Universitas Haluoleo</h3>
+                                <p class="text-ai-blue font-semibold">Bachelor's Degree, Computer Science</p>
+                                <p class="text-gray-500 text-sm mb-3">2014 - 2019</p>
+                                <div class="flex flex-wrap gap-2 mb-3">
+                                    <span class="px-3 py-1 bg-ai-yellow text-ai-dark text-sm font-bold">GPA: 3.65 / 4.00</span>
+                                </div>
+                                <ul class="text-gray-600 text-sm space-y-1">
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-ai-blue">•</span>
+                                        <span>Minister of Communication and Information Technology</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <span class="text-ai-blue">•</span>
+                                        <span>Generasi Baru Indonesia (GenBI Sultra) Advisory Council</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bangkit Academy -->
+                    <div class="reveal bg-gray-50 p-6 border-l-4 border-ai-yellow hover:shadow-lg transition-shadow">
+                        <div class="flex items-start gap-4">
+                            <div class="w-16 h-16 bg-ai-yellow flex items-center justify-center flex-shrink-0">
+                                <svg class="w-8 h-8 text-ai-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-space text-xl font-bold text-ai-dark">Bangkit Machine Learning Academy</h3>
+                                <p class="text-ai-yellow font-semibold">Associate's Degree, Bangkit 2020</p>
+                                <p class="text-gray-500 text-sm mb-3">2020</p>
+                                <p class="text-gray-600 text-sm">Intensive program by Google, Tokopedia, Gojek & Traveloka focused on Machine Learning, Mobile Development, and Cloud Computing certifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="space-y-8">
+                    <h2 class="font-space text-3xl md:text-4xl font-bold text-ai-dark reveal">
+                        Licenses & <span class="text-ai-yellow">Certifications</span>
+                    </h2>
+
+                    <div class="grid gap-4">
+                        <!-- TensorFlow Certificate -->
+                        <div class="reveal bg-ai-dark p-5 text-white hover:scale-[1.02] transition-transform cursor-pointer">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-ai-blue flex items-center justify-center flex-shrink-0">
+                                    <span class="font-space font-bold text-lg">TF</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-space font-bold">TensorFlow Developer Certificate</h4>
+                                    <p class="text-gray-400 text-sm">TensorFlow Certificate Program</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- BNSP -->
+                        <div class="reveal bg-ai-dark p-5 text-white hover:scale-[1.02] transition-transform cursor-pointer">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-ai-yellow flex items-center justify-center flex-shrink-0">
+                                    <span class="font-space font-bold text-lg text-ai-dark">DS</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-space font-bold">Associate Data Scientist</h4>
+                                    <p class="text-gray-400 text-sm">Badan Nasional Sertifikasi Profesi (BNSP)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IBM Data Science -->
+                        <div class="reveal bg-ai-dark p-5 text-white hover:scale-[1.02] transition-transform cursor-pointer">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-white flex items-center justify-center flex-shrink-0">
+                                    <span class="font-space font-bold text-lg text-ai-dark">IBM</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-space font-bold">Data Science Practitioners</h4>
+                                    <p class="text-gray-400 text-sm">IBM</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IBM Design Thinking -->
+                        <div class="reveal bg-ai-dark p-5 text-white hover:scale-[1.02] transition-transform cursor-pointer">
+                            <div class="flex items-center gap-4">
+                                <div class="w-12 h-12 bg-ai-blue flex items-center justify-center flex-shrink-0">
+                                    <span class="font-space font-bold text-lg">EDT</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-space font-bold">Enterprise Design Thinking Practitioner</h4>
+                                    <p class="text-gray-400 text-sm">IBM</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-ai-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 grid-background opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-yellow"></div>
+                <span class="font-space text-ai-yellow font-semibold tracking-wider">SKILLS</span>
+                <div class="flex-1 h-px bg-gray-700"></div>
+                <span class="font-space text-gray-500">04</span>
+            </div>
+
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-space text-4xl md:text-5xl font-bold mb-4">
+                    Technical <span class="text-ai-blue">Expertise</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Programming Languages -->
+                <div class="reveal">
+                    <h3 class="font-space text-xl font-bold text-ai-yellow mb-4 flex items-center gap-2">
+                        <span class="w-8 h-1 bg-ai-yellow"></span>
+                        Languages
+                    </h3>
+                    <div class="space-y-3">
+                        <div class="group">
+                            <div class="flex justify-between mb-1">
+                                <span>Python</span>
+                                <span class="text-ai-blue">Expert</span>
+                            </div>
+                            <div class="h-2 bg-ai-gray rounded-full overflow-hidden">
+                                <div class="h-full bg-ai-blue w-[95%] group-hover:bg-ai-yellow transition-colors"></div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex justify-between mb-1">
+                                <span>JavaScript</span>
+                                <span class="text-ai-blue">Expert</span>
+                            </div>
+                            <div class="h-2 bg-ai-gray rounded-full overflow-hidden">
+                                <div class="h-full bg-ai-blue w-[90%] group-hover:bg-ai-yellow transition-colors"></div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex justify-between mb-1">
+                                <span>PHP</span>
+                                <span class="text-ai-yellow">Advanced</span>
+                            </div>
+                            <div class="h-2 bg-ai-gray rounded-full overflow-hidden">
+                                <div class="h-full bg-ai-yellow w-[80%] group-hover:bg-ai-blue transition-colors"></div>
+                            </div>
+                        </div>
+                        <div class="group">
+                            <div class="flex justify-between mb-1">
+                                <span>SQL</span>
+                                <span class="text-ai-yellow">Advanced</span>
+                            </div>
+                            <div class="h-2 bg-ai-gray rounded-full overflow-hidden">
+                                <div class="h-full bg-ai-yellow w-[85%] group-hover:bg-ai-blue transition-colors"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools & Frameworks -->
+                <div class="reveal">
+                    <h3 class="font-space text-xl font-bold text-ai-blue mb-4 flex items-center gap-2">
+                        <span class="w-8 h-1 bg-ai-blue"></span>
+                        Tools & Frameworks
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">TensorFlow</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Google Cloud Platform</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">Git</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Linux</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">Databases</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Machine Tools</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">IoT</span>
+                    </div>
+                </div>
+
+                <!-- Technical Skills -->
+                <div class="reveal">
+                    <h3 class="font-space text-xl font-bold text-ai-yellow mb-4 flex items-center gap-2">
+                        <span class="w-8 h-1 bg-ai-yellow"></span>
+                        Technical
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Data Analysis</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">Deep Learning</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Machine Learning</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">IT Project Management</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Change Management</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="reveal">
+                    <h3 class="font-space text-xl font-bold text-ai-blue mb-4 flex items-center gap-2">
+                        <span class="w-8 h-1 bg-ai-blue"></span>
+                        Soft Skills
+                    </h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">Leadership</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Public Speaking</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">Time Management</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Attention to Detail</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-blue transition-colors">Strategic Planning</span>
+                        <span class="px-3 py-2 bg-ai-gray border border-gray-700 hover:border-ai-yellow transition-colors">Teamwork</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Honors & Awards Section -->
+    <section id="awards" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-blue"></div>
+                <span class="font-space text-ai-blue font-semibold tracking-wider">HONORS & AWARDS</span>
+                <div class="flex-1 h-px bg-gray-200"></div>
+                <span class="font-space text-gray-400">05</span>
+            </div>
+
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-space text-4xl md:text-5xl font-bold text-ai-dark mb-4">
+                    Recognition & <span class="text-ai-yellow">Achievements</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Gemastik 10 -->
+                <div class="reveal group">
+                    <div class="bg-gray-50 p-8 h-full border-t-4 border-ai-blue hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-ai-blue text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"/>
+                            </svg>
+                        </div>
+                        <div class="text-ai-blue font-space text-sm font-bold mb-2">NOV 2017</div>
+                        <h3 class="font-space text-xl font-bold text-ai-dark mb-2">Smart Devices & Embedded System</h3>
+                        <p class="text-ai-yellow font-semibold mb-3">Gemastik 10</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Created a prototype to detect bullying in children. Achieved <strong>Top 10 of 30 teams</strong> throughout Indonesia in this national competition.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- XL Future Leaders -->
+                <div class="reveal group">
+                    <div class="bg-gray-50 p-8 h-full border-t-4 border-ai-yellow hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-ai-yellow text-ai-dark flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.049 2.927c.3-.921 1.603-.921 1.902 0l1.519 4.674a1 1 0 00.95.69h4.915c.969 0 1.371 1.24.588 1.81l-3.976 2.888a1 1 0 00-.363 1.118l1.518 4.674c.3.922-.755 1.688-1.538 1.118l-3.976-2.888a1 1 0 00-1.176 0l-3.976 2.888c-.783.57-1.838-.197-1.538-1.118l1.518-4.674a1 1 0 00-.363-1.118l-3.976-2.888c-.784-.57-.38-1.81.588-1.81h4.914a1 1 0 00.951-.69l1.519-4.674z"/>
+                            </svg>
+                        </div>
+                        <div class="text-ai-yellow font-space text-sm font-bold mb-2">JAN 2016</div>
+                        <h3 class="font-space text-xl font-bold text-ai-dark mb-2">Awardee XL Future Leaders 5</h3>
+                        <p class="text-ai-blue font-semibold mb-3">PT. XL Axiata</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Indonesia's most dynamic CSR program designed to develop leaders that are socially informed, creative and confident by providing high quality learning resources for young people across Indonesia.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Tokopedia Product Academy -->
+                <div class="reveal group">
+                    <div class="bg-gray-50 p-8 h-full border-t-4 border-ai-dark hover:shadow-xl transition-all hover:-translate-y-2">
+                        <div class="w-16 h-16 bg-ai-dark text-white flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/>
+                            </svg>
+                        </div>
+                        <div class="text-ai-dark font-space text-sm font-bold mb-2">APR 2019</div>
+                        <h3 class="font-space text-xl font-bold text-ai-dark mb-2">Tokopedia Product Academy</h3>
+                        <p class="text-green-600 font-semibold mb-3">Tokopedia</p>
+                        <p class="text-gray-600 text-sm leading-relaxed">
+                            Learned how to be a Product Manager! From product framework introduction to getting hands-on experience on real products, enhancing knowledge and sharpening skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teaching Section -->
+    <section id="teaching" class="py-24 bg-ai-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 grid-background opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-yellow"></div>
+                <span class="font-space text-ai-yellow font-semibold tracking-wider">TEACHING</span>
+                <div class="flex-1 h-px bg-gray-700"></div>
+                <span class="font-space text-gray-500">06</span>
+            </div>
+
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-space text-4xl md:text-5xl font-bold mb-4">
+                    Sharing <span class="text-ai-blue">Knowledge</span>
+                </h2>
+                <p class="text-gray-400 max-w-2xl mx-auto">
+                    Contributing to the next generation of tech professionals through education and mentorship.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Praktisi Mengajar -->
+                <div class="reveal">
+                    <div class="bg-ai-gray p-8 border-l-4 border-ai-blue hover:border-ai-yellow transition-colors">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-ai-blue flex items-center justify-center">
+                                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-space text-xl font-bold">Praktisi Mengajar Program</h3>
+                                <p class="text-ai-yellow">Kemendikbud</p>
+                                <p class="text-gray-400 text-sm">Oct 2023 - Present</p>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <span class="px-3 py-1 bg-ai-blue text-white text-sm font-space font-bold">DEEP LEARNING</span>
+                        </div>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
+                            Providing learning materials using practical methods to students, covering advanced AI and Deep Learning topics.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-400">
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-yellow">▸</span>
+                                Model Evaluation Metrics
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-yellow">▸</span>
+                                CNN Application in TensorFlow
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-yellow">▸</span>
+                                Recurrent Neural Network in TensorFlow
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-yellow">▸</span>
+                                DC-GAN (Deep Convolution Generative Adversarial Network)
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-yellow">▸</span>
+                                TensorFlow Model Deployment (Web, Mobile, IoT)
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bangkit Instructor -->
+                <div class="reveal">
+                    <div class="bg-ai-gray p-8 border-l-4 border-ai-yellow hover:border-ai-blue transition-colors">
+                        <div class="flex items-center gap-4 mb-6">
+                            <div class="w-16 h-16 bg-ai-yellow flex items-center justify-center">
+                                <svg class="w-8 h-8 text-ai-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-space text-xl font-bold">Instructor</h3>
+                                <p class="text-ai-blue">Bangkit Academy</p>
+                                <p class="text-gray-400 text-sm">Feb 2021 - Present</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 flex flex-wrap gap-2">
+                            <span class="px-3 py-1 bg-ai-yellow text-ai-dark text-sm font-space font-bold">SCIENCE & TECHNOLOGY</span>
+                        </div>
+                        <p class="text-gray-300 mb-4 leading-relaxed">
+                            Led by Google, Tokopedia, Gojek, & Traveloka - preparing students with in-demand skills and tech certifications.
+                        </p>
+                        <div class="space-y-2 text-sm text-gray-400">
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-blue">▸</span>
+                                Partner with instructors to facilitate synchronous workshops/modules
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-blue">▸</span>
+                                Team with Advisors to support online, self-paced ML modules
+                            </p>
+                            <p class="flex items-start gap-2">
+                                <span class="text-ai-blue">▸</span>
+                                Machine Learning, Mobile Development, Cloud Computing paths
+                            </p>
+                        </div>
+                        <div class="mt-6 flex gap-2">
+                            <img src="https://via.placeholder.com/40x40/4285F4/FFFFFF?text=G" alt="Google" class="w-8 h-8">
+                            <img src="https://via.placeholder.com/40x40/42B549/FFFFFF?text=T" alt="Tokopedia" class="w-8 h-8">
+                            <img src="https://via.placeholder.com/40x40/00AA13/FFFFFF?text=Go" alt="Gojek" class="w-8 h-8">
+                            <img src="https://via.placeholder.com/40x40/0064D2/FFFFFF?text=Tv" alt="Traveloka" class="w-8 h-8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section - Magazine Gallery -->
+    <section id="portfolio" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-blue"></div>
+                <span class="font-space text-ai-blue font-semibold tracking-wider">PORTFOLIO</span>
+                <div class="flex-1 h-px bg-gray-200"></div>
+                <span class="font-space text-gray-400">07</span>
+            </div>
+
+            <div class="text-center mb-16 reveal">
+                <h2 class="font-space text-4xl md:text-5xl font-bold text-ai-dark mb-4">
+                    Featured <span class="text-ai-yellow">Projects</span>
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    A curated selection of projects showcasing my expertise in AI, Machine Learning, and Full Stack Development.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12 reveal">
+                <button class="filter-btn active px-6 py-2 font-space font-semibold border-2 border-ai-dark text-ai-dark hover:bg-ai-dark hover:text-white transition-all" data-filter="all">
+                    ALL
+                </button>
+                <button class="filter-btn px-6 py-2 font-space font-semibold border-2 border-ai-blue text-ai-blue hover:bg-ai-blue hover:text-white transition-all" data-filter="ai">
+                    AI/ML
+                </button>
+                <button class="filter-btn px-6 py-2 font-space font-semibold border-2 border-ai-yellow text-ai-dark hover:bg-ai-yellow transition-all" data-filter="web">
+                    WEB
+                </button>
+                <button class="filter-btn px-6 py-2 font-space font-semibold border-2 border-gray-400 text-gray-600 hover:bg-gray-400 hover:text-white transition-all" data-filter="iot">
+                    IoT
+                </button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8" id="portfolio-grid">
+                
+                <!-- Project 1 - Semantic Node Extraction -->
+                <div class="portfolio-item reveal" data-category="ai" data-project="semantic-node">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=Semantic+Node" 
+                                 alt="Semantic Node Extraction"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">AI / NLP / GRAPH DB</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Semantic Node Extraction</h3>
+                            <p class="text-gray-300 text-sm mt-2">AI-powered keyword extraction using Azure OpenAI API. Analyzes relationships between response results using graph database technology for intelligent content mapping.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Node.js</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Neo4J</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Vue.js</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Azure OpenAI</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - Augmented Reality WebXR -->
+                <div class="portfolio-item reveal" data-category="ai" data-project="ar-webxr">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=WebXR+AR" 
+                                 alt="Augmented Reality WebXR"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">AR / COMPUTER VISION</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Augmented Reality WebXR</h3>
+                            <p class="text-gray-300 text-sm mt-2">Hybrid AR application combining location tracking and marker detection. Uses OpenCV for image processing to display AR content at precise geo-locations through web browsers.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">WebXR</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">A-Frame</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Three.js</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">OpenCV</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - Deep Object Detection -->
+                <div class="portfolio-item reveal" data-category="ai" data-project="traffic-light">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=YOLOv5+Traffic" 
+                                 alt="Deep Object Detection"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">AI / DEEP LEARNING / MOBILE</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Traffic Light Detection</h3>
+                            <p class="text-gray-300 text-sm mt-2">Real-time traffic light detection on Android using YOLOv5s weights with TensorFlow Lite. Employs image processing to isolate RGB pixels and distinguish red, yellow, green signals.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">YOLOv5</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">TF Lite</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Android</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">OpenCV</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - Smart Home IoT -->
+                <div class="portfolio-item reveal" data-category="iot" data-project="smart-home">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=Smart+Home+IoT" 
+                                 alt="Smart Home IoT System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">IoT / EMBEDDED / FULLSTACK</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Smart Home Prototype</h3>
+                            <p class="text-gray-300 text-sm mt-2">Complete IoT solution with ESP8266 microcontroller, integrating LM35 temperature sensor, soil moisture sensor, and PIR motion detection. Real-time data via Socket.io.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">ESP8266</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Vue.js</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Node.js</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Socket.io</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">ArangoDB</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 - Movie Recommendation -->
+                <div class="portfolio-item reveal" data-category="ai" data-project="movie-recommendation">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=Movie+Recommender" 
+                                 alt="Movie Recommendation System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">AI / MACHINE LEARNING</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Movie Recommendation</h3>
+                            <p class="text-gray-300 text-sm mt-2">Intelligent movie recommendation engine using Singular Value Decomposition (SVD) algorithm. Analyzes user rating patterns to predict and suggest personalized film choices.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Python</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">SVD</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">NumPy</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Pandas</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 - BullyBreaker -->
+                <div class="portfolio-item reveal" data-category="iot" data-project="bully-breaker">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=BullyBreaker" 
+                                 alt="BullyBreaker Anti-Bullying System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">IoT / SOCIAL IMPACT</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">BullyBreaker</h3>
+                            <p class="text-gray-300 text-sm mt-2">Child safety wearable belt that monitors for bullying incidents. Detects heart rate, sound, pressure, vibration, and captures images. Instant parent notification system.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">ESP8266</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Vue.js</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Firebase</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Sensors</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 7 - Geographic Information System -->
+                <div class="portfolio-item reveal" data-category="web" data-project="gis-mapping">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=GIS+System" 
+                                 alt="Geographic Information System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">WEB / GIS / MAPPING</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">GIS Village Mapping</h3>
+                            <p class="text-gray-300 text-sm mt-2">Comprehensive mapping system with base map layering and coordinate plotting for each village. Features real-time location monitoring with Docker containerization.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Vue.js</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Node.js</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Google Maps</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">ArangoDB</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Docker</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 8 - Load Balancing System -->
+                <div class="portfolio-item reveal" data-category="web" data-project="nth-load-balancing">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=Load+Balancer" 
+                                 alt="Load Balancing System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">NETWORK / INFRASTRUCTURE</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">NTH Load Balancing</h3>
+                            <p class="text-gray-300 text-sm mt-2">Web-based network load balancer with direct MikroTik integration. Distributes traffic between Telkomsel and XL ISP networks using NTH algorithm for optimal performance.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">MikroTik</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">NTH Method</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Web Interface</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Dual ISP</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 9 - Medicines Stock Prediction -->
+                <div class="portfolio-item reveal" data-category="ai" data-project="medicine-prediction">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=Stock+Prediction" 
+                                 alt="Medicines Stock Prediction"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">AI / TIME SERIES / FORECASTING</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Medicine Sales Prediction</h3>
+                            <p class="text-gray-300 text-sm mt-2">Pharmaceutical inventory forecasting system using Triple Exponential Smoothing (Holt-Winters). Predicts medicine stock requirements based on seasonal sales patterns.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Python</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Holt-Winters</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Forecasting</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Pandas</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 10 - Disaster Reporting App -->
+                <div class="portfolio-item reveal" data-category="web" data-project="disaster-app">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=Disaster+App" 
+                                 alt="Disaster Reporting Application"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">MOBILE / WEB / EMERGENCY</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Disaster Reporting App</h3>
+                            <p class="text-gray-300 text-sm mt-2">Emergency response platform with one-tap reporting for fires, disasters, and help requests. Cross-platform solution with React Native mobile app and Vue.js admin dashboard.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">React Native</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Vue.js</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Node.js</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Figma</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">IN DEV</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 11 - E-commerce Traditional Market -->
+                <div class="portfolio-item reveal" data-category="web" data-project="ecommerce-market">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=E-commerce" 
+                                 alt="E-commerce Traditional Market"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">WEB / E-COMMERCE</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Traditional Market E-commerce</h3>
+                            <p class="text-gray-300 text-sm mt-2">Bank Indonesia (Southeast Sulawesi) initiative. Features distance-based shipping costs and buyer-seller bargaining system for traditional market digitalization.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">PHP</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">JavaScript</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">CSS</span>
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">MySQL</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 12 - 336 Village Websites -->
+                <div class="portfolio-item reveal" data-category="web" data-project="village-web">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=336+Villages" 
+                                 alt="Village Website System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">WEB / CMS / GOVERNMENT</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">336 Village Websites</h3>
+                            <p class="text-gray-300 text-sm mt-2">Centralized website management system for entire South Konawe Regency. Unified platform managing 336 village digital presence with consistent branding.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">JavaScript</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">CMS</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Full Stack</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 13 - Moramo Waterfall -->
+                <div class="portfolio-item reveal" data-category="web" data-project="moramo-waterfall">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=Moramo+Tourism" 
+                                 alt="Moramo Waterfall Tourism"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">WEB / TOURISM</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Moramo Waterfall</h3>
+                            <p class="text-gray-300 text-sm mt-2">Award-winning tourism web application. Contributed to recognition as #3 Best Tourism Place in Indonesia, presented to the Netherlands delegation.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">Full Stack</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">#3 Indonesia</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 14 - SSO Statistical App -->
+                <div class="portfolio-item reveal" data-category="web" data-project="sso-statistical">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=SSO+Stats" 
+                                 alt="SSO Statistical Application"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">WEB / ENTERPRISE / SSO</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">SSO Statistical Platform</h3>
+                            <p class="text-gray-300 text-sm mt-2">Enterprise statistical platform with single sign-on authorization serving 10 government agencies. Enhanced data accessibility and security across departments.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">SSO Auth</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">10 Agencies</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Full Stack</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 15 - SIMBADA -->
+                <div class="portfolio-item reveal" data-category="web" data-project="simbada">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=SIMBADA" 
+                                 alt="SIMBADA Boundary System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">WEB / GIS / GOVERNMENT</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">SIMBADA System</h3>
+                            <p class="text-gray-300 text-sm mt-2">Regional boundary and land zone management system. Facilitates conflict resolution and supports village boundary determination for local government.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">GIS</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Land Zone</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Full Stack</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 16 - Kredivo Bot -->
+                <div class="portfolio-item reveal" data-category="ai" data-project="kredivo-bot">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=Kredivo+Bot" 
+                                 alt="Kredivo Chatbot System"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">AI / NLP / FINTECH</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Kredivo Bot System</h3>
+                            <p class="text-gray-300 text-sm mt-2">Intelligent chatbot for Vietnam Kredivo platform. Features intent management, private notes for CS optimization, and real-time issue messaging.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">NLP</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Chatbot</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Fintech</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 17 - YOLOv5 Car Dashboard -->
+                <div class="portfolio-item reveal" data-category="ai" data-project="yolov5-dashboard">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/0066FF?text=YOLOv5+Dashboard" 
+                                 alt="YOLOv5 Car Dashboard"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-blue font-space text-sm font-bold">AI / AUTOMOTIVE</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">YOLOv5 Car Dashboard</h3>
+                            <p class="text-gray-300 text-sm mt-2">Custom YOLOv5 object detection for automotive dashboard recognition on Android. Real-time processing for in-vehicle applications at KEISUUGIKEN.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">YOLOv5</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Android</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Real-time</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-yellow text-ai-dark px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 18 - Smart City SPBE -->
+                <div class="portfolio-item reveal" data-category="web" data-project="smart-city">
+                    <div class="group relative bg-ai-dark overflow-hidden">
+                        <div class="aspect-[4/3] overflow-hidden">
+                            <img src="https://via.placeholder.com/600x450/0A0A0A/FFD700?text=Smart+City" 
+                                 alt="Smart City Master Plan"
+                                 class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        </div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                        <div class="absolute bottom-0 left-0 right-0 p-6 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                            <span class="text-ai-yellow font-space text-sm font-bold">STRATEGY / E-GOV</span>
+                            <h3 class="text-white font-space text-xl font-bold mt-2">Smart City Master Plan</h3>
+                            <p class="text-gray-300 text-sm mt-2">Technical coordinator for SPBE (Electronic-Based Government Systems). Developed Architecture & Plan Map for South Konawe's digital transformation.</p>
+                            <div class="flex flex-wrap gap-1 mt-3">
+                                <span class="text-xs px-2 py-1 bg-ai-blue/30 text-ai-blue">SPBE</span>
+                                <span class="text-xs px-2 py-1 bg-ai-yellow/30 text-ai-yellow">Architecture</span>
+                                <span class="text-xs px-2 py-1 bg-white/20 text-white">Strategy</span>
+                            </div>
+                        </div>
+                        <div class="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity">
+                            <span class="bg-ai-blue text-white px-3 py-1 font-space text-xs font-bold">VIEW</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-ai-dark text-white relative overflow-hidden">
+        <!-- Background -->
+        <div class="absolute inset-0 grid-background opacity-10"></div>
+        
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <!-- Section Header -->
+            <div class="flex items-center gap-4 mb-16 reveal">
+                <div class="w-16 h-1 bg-ai-yellow"></div>
+                <span class="font-space text-ai-yellow font-semibold tracking-wider">CONTACT</span>
+                <div class="flex-1 h-px bg-gray-700"></div>
+                <span class="font-space text-gray-500">08</span>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-16">
+                <!-- Left - Contact Info -->
+                <div class="reveal">
+                    <h2 class="font-space text-4xl md:text-5xl font-bold mb-6">
+                        Let's <span class="text-ai-blue">Connect</span>
+                    </h2>
+                    <p class="text-gray-400 text-lg mb-8">
+                        Interested in collaborating on AI projects, web development, or just want to say hello? 
+                        I'm always open to discussing new opportunities and ideas.
+                    </p>
+
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-ai-blue flex items-center justify-center">
+                                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">Email</div>
+                                <a href="mailto:indrafransiskusalam@gmail.com" class="text-white font-semibold hover:text-ai-yellow transition-colors">indrafransiskusalam@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-ai-yellow flex items-center justify-center">
+                                <svg class="w-6 h-6 text-ai-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">Phone</div>
+                                <a href="tel:+6282291444065" class="text-white font-semibold hover:text-ai-yellow transition-colors">+62 822 9144 4065</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-white flex items-center justify-center">
+                                <svg class="w-6 h-6 text-ai-dark" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">LinkedIn</div>
+                                <a href="https://www.linkedin.com/in/indra-fransiskus-alam-63422414b/" target="_blank" class="text-white font-semibold hover:text-ai-yellow transition-colors">linkedin.com/in/indra-fransiskus-alam</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-12 h-12 bg-ai-gray flex items-center justify-center border border-gray-600">
+                                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="text-gray-400 text-sm">GitHub</div>
+                                <a href="https://github.com/simplephi" target="_blank" class="text-white font-semibold hover:text-ai-yellow transition-colors">github.com/simplephi</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right - Contact Form -->
+                <div class="reveal">
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-400 text-sm mb-2">Name</label>
+                                <input type="text" 
+                                       class="w-full bg-ai-gray border border-gray-700 px-4 py-3 text-white focus:border-ai-blue focus:outline-none transition-colors"
+                                       placeholder="Your Name">
+                            </div>
+                            <div>
+                                <label class="block text-gray-400 text-sm mb-2">Email</label>
+                                <input type="email" 
+                                       class="w-full bg-ai-gray border border-gray-700 px-4 py-3 text-white focus:border-ai-blue focus:outline-none transition-colors"
+                                       placeholder="your@email.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-sm mb-2">Subject</label>
+                            <input type="text" 
+                                   class="w-full bg-ai-gray border border-gray-700 px-4 py-3 text-white focus:border-ai-blue focus:outline-none transition-colors"
+                                   placeholder="Project Inquiry">
+                        </div>
+                        <div>
+                            <label class="block text-gray-400 text-sm mb-2">Message</label>
+                            <textarea rows="5" 
+                                      class="w-full bg-ai-gray border border-gray-700 px-4 py-3 text-white focus:border-ai-blue focus:outline-none transition-colors resize-none"
+                                      placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        <button type="submit" 
+                                class="w-full bg-ai-blue text-white font-space font-bold py-4 hover:bg-blue-600 transition-colors">
+                            SEND MESSAGE
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Detail Modal -->
+    <div id="portfolio-modal" class="fixed inset-0 z-[100] hidden">
+        <!-- Backdrop -->
+        <div class="modal-backdrop absolute inset-0 bg-black/90 backdrop-blur-sm"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative z-10 h-full overflow-y-auto">
+            <!-- Close Button -->
+            <button id="modal-close" class="fixed top-6 right-6 z-20 w-12 h-12 bg-white text-ai-dark flex items-center justify-center hover:bg-ai-yellow transition-colors">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+
+            <!-- Dynamic Content Container -->
+            <div id="modal-content" class="min-h-screen">
+                <!-- Content will be injected here by JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="font-space font-bold text-xl mb-4 md:mb-0">
+                    <span class="text-ai-blue">&lt;</span>INDRA<span class="text-ai-yellow">/&gt;</span>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2026 Indra Fransiskus Alam. All rights reserved. Built with passion for AI.
+                </div>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="https://github.com/simplephi" target="_blank" class="w-10 h-10 bg-ai-gray flex items-center justify-center hover:bg-ai-blue transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/indra-fransiskus-alam-63422414b/" target="_blank" class="w-10 h-10 bg-ai-gray flex items-center justify-center hover:bg-ai-yellow hover:text-ai-dark transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
