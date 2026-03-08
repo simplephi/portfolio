@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Indra Fransiskus Alam</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect fill='%230A0A0A' width='100' height='100' rx='10'/%3E%3Ctext x='50' y='68' font-family='monospace' font-size='50' font-weight='bold' text-anchor='middle' fill='%230066FF'%3E%26lt;%3C/text%3E%3Ctext x='75' y='68' font-family='monospace' font-size='50' font-weight='bold' text-anchor='middle' fill='%23FFD700'%3E/%3E%3C/text%3E%3C/svg%3E">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'ai-yellow': '#FFD700',
+                        'ai-blue': '#0066FF',
+                        'ai-dark': '#0A0A0A',
+                        'ai-gray': '#1A1A1A',
+                    },
+                    fontFamily: {
+                        'space': ['Space Grotesk', 'sans-serif'],
+                        'inter': ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white font-inter">
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-ai-dark shadow-lg">
+        <div class="max-w-7xl mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="font-space font-bold text-2xl text-white">
+                    <span class="text-ai-blue">&lt;</span>INDRA<span class="text-ai-yellow">/&gt;</span>
+                </a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html#about" class="nav-link text-white hover:text-ai-yellow transition-colors">About</a>
+                    <a href="index.html#experience" class="nav-link text-white hover:text-ai-yellow transition-colors">Experience</a>
+                    <a href="index.html#education" class="nav-link text-white hover:text-ai-yellow transition-colors">Education</a>
+                    <a href="documentation.html" class="nav-link text-ai-yellow hover:text-ai-yellow transition-colors">Documentation</a>
+                    <a href="index.html#portfolio" class="nav-link text-white hover:text-ai-yellow transition-colors">Portfolio</a>
+                    <a href="index.html#contact" class="nav-link text-white hover:text-ai-yellow transition-colors">Contact</a>
+                </div>
+                <button id="mobile-menu-btn" class="md:hidden text-white">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-ai-dark shadow-lg">
+            <div class="px-6 py-4 space-y-4">
+                <a href="index.html#about" class="block text-white hover:text-ai-yellow">About</a>
+                <a href="index.html#experience" class="block text-white hover:text-ai-yellow">Experience</a>
+                <a href="index.html#education" class="block text-white hover:text-ai-yellow">Education</a>
+                <a href="documentation.html" class="block text-ai-yellow hover:text-ai-yellow">Documentation</a>
+                <a href="index.html#portfolio" class="block text-white hover:text-ai-yellow">Portfolio</a>
+                <a href="index.html#contact" class="block text-white hover:text-ai-yellow">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-ai-dark text-white relative overflow-hidden">
+        <div class="absolute inset-0 grid-background opacity-10"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10">
+            <div class="text-center">
+                <h1 class="font-space text-5xl md:text-6xl font-bold mb-6">
+                    Activity <span class="text-ai-blue">Documentation</span>
+                </h1>
+                <p class="text-gray-400 max-w-2xl mx-auto text-lg">
+                    A collection of photos documenting my professional activities including government projects, volunteer work, and public speaking engagements.
+                </p>
+                <div class="mt-8">
+                    <a href="index.html" class="inline-flex items-center text-ai-yellow hover:text-white transition-colors">
+                        <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                        </svg>
+                        Back to Home
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Smart City Gallery -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-1 bg-ai-yellow"></div>
+                <h2 class="font-space text-3xl font-bold text-ai-dark">
+                    <span class="text-ai-yellow">▸</span> Smart City Initiative
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20210903-WA0011.jpg.jpeg" alt="Smart City Meeting" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City team coordination meeting for regional digital infrastructure planning</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20220713-WA0079.jpg.jpeg" alt="Smart City Workshop" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Workshop on Smart City masterplan development with regional stakeholders</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20220921-WA0046.jpg.jpeg" alt="Smart City Presentation" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City implementation roadmap presentation to regional leadership</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20230720-WA0005.jpg.jpeg" alt="Smart City Team" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City development team during technical discussion session</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20230727-WA0020.jpg.jpeg" alt="Smart City Evaluation" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Progress evaluation of Smart City digital service implementation</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20231006-WA0075.jpg.jpeg" alt="Smart City Launch" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Launch of Smart City Konawe Selatan public service application</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20231109-WA0054.jpg.jpeg" alt="Smart City Training" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Training session on Smart City dashboard usage for village officials</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20231208-WA0008.jpg.jpeg" alt="Smart City Award" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City award from provincial government for digital innovation</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20231219-WA0068.jpg.jpeg" alt="Smart City Review" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Year-end review of Smart City program achievements</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240616-WA0018.jpg.jpeg" alt="Smart City Expansion" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City infrastructure expansion to remote areas</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240620-WA0003.jpg.jpeg" alt="Smart City Integration" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City system integration with national platform</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240624-WA0027.jpg.jpeg" alt="Smart City Demo" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City feature demonstration to delegates from other regions</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240624-WA0061.jpg.jpeg" alt="Smart City Conference" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Southeast Sulawesi regional Smart City conference</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240624-WA0109.jpg.jpeg" alt="Smart City Collaboration" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Collaboration with tech startups for Smart City development</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240629-WA0022.jpg.jpeg" alt="Smart City Visit" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City team study visit to pilot region</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240813-WA0023.jpg.jpeg" alt="Smart City Monitoring" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City command center monitoring with real-time dashboard</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240813-WA0025.jpg.jpeg" alt="Smart City Infrastructure" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City network infrastructure inspection at BTS location</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240813-WA0026.jpg.jpeg" alt="Smart City Data Center" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City data center server inspection at Diskominfo office</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/smart city/IMG-20240825-WA0063.jpg.jpeg" alt="Smart City Final" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Smart City team during public application socialization event</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SPBE Gallery -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-1 bg-ai-blue"></div>
+                <h2 class="font-space text-3xl font-bold text-ai-dark">
+                    <span class="text-ai-blue">▸</span> SPBE (Electronic-Based Government System)
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20220713-WA0055.jpg.jpeg" alt="SPBE Assessment" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Initial SPBE maturity assessment with the Evaluator Team</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20220921-WA0027.jpg.jpeg" alt="SPBE Workshop" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Workshop on SPBE document preparation according to national standards</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20221122-WA0034.jpg.jpeg" alt="SPBE Meeting" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Coordination meeting on regional SPBE policy implementation</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230115-WA0044.jpg.jpeg" alt="SPBE Training" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">SPBE admin training for all regional government agencies</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230131-WA0007.jpg.jpeg" alt="SPBE Evaluation" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Evaluation of SPBE digital applications and services</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230131-WA0008.jpg.jpeg" alt="SPBE Documentation" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">SPBE architecture documentation preparation</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230131-WA0012.jpg.jpeg" alt="SPBE Team" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Diskominfo SPBE team during technical review session</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230712-WA0043.jpg.jpeg" alt="SPBE Seminar" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">National seminar on district-level SPBE implementation</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230712-WA0073.jpg.jpeg" alt="SPBE Certificate" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">SPBE index certificate presentation from Ministry of Administrative Reform</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230713-WA0060.jpg.jpeg" alt="SPBE Award" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Best regional SPBE index improvement award</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20230715-WA0051.jpg.jpeg" alt="SPBE Implementation" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Implementation of integrated SPBE service portal</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20231120-WA0040.jpg.jpeg" alt="SPBE Audit" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Security audit of SPBE systems and infrastructure</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20240521-WA0014.jpg.jpeg" alt="SPBE Update" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">SPBE system update according to latest regulations</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/SPBE/IMG-20240610-WA0012.jpg.jpeg" alt="SPBE Final" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">SPBE evaluation preparation for national assessment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Volunteer Gallery -->
+    <section class="py-20 bg-ai-dark text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-1 bg-ai-yellow"></div>
+                <h2 class="font-space text-3xl font-bold">
+                    <span class="text-ai-yellow">▸</span> Volunteer Activities
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="images/additionals/volunteer/IMG-20221119-WA0051.jpg.jpeg" alt="Volunteer Event" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-ai-dark/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Tech volunteer event with Southeast Sulawesi IT community for public digital literacy</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="images/additionals/volunteer/IMG-20221119-WA0067.jpg.jpeg" alt="Community Service" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-ai-dark/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Community service in computer training program for village youth</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="images/additionals/volunteer/IMG-20221119-WA0083.jpg.jpeg" alt="Tech Volunteer" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-ai-dark/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Free mentoring session for students about tech career paths</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg">
+                    <img src="images/additionals/volunteer/IMG-20221119-WA0086.jpg.jpeg" alt="Volunteer Team" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark via-ai-dark/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Volunteer team in social and tech education activities with Bangkit Academy alumni</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Speaker Gallery -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-1 bg-ai-blue"></div>
+                <h2 class="font-space text-3xl font-bold text-ai-dark">
+                    <span class="text-ai-blue">▸</span> Speaker Sessions
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/DSC09196.jpg.jpeg" alt="Speaker Event" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Speaker at Machine Learning workshop at university event</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/DSC09348.jpg.jpeg" alt="Tech Talk" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Tech talk on real-world AI implementation</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG-20220928-WA0024.jpg.jpeg" alt="Workshop Session" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Hands-on TensorFlow workshop for beginners</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG-20221213-WA0062.jpg.jpeg" alt="Seminar" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Seminar on career paths in Artificial Intelligence</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG-20221213-WA0072.jpg.jpeg" alt="Panel Discussion" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Panel discussion with tech industry practitioners</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG-20231030-WA0081.jpg.jpeg" alt="Conference" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Presentation at regional technology conference</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG-20231126-WA0057.jpg.jpeg" alt="University Talk" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Guest lecture at university on Deep Learning</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG-20231130-WA0046.jpg.jpeg" alt="Workshop" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Computer Vision practical workshop with YOLOv5</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG-20241023-WA0067.jpg.jpeg" alt="Tech Meetup" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Tech meetup with Southeast Sulawesi developer community</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG_20221213_181940.jpg.jpeg" alt="Webinar" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Webinar speaker on Machine Learning introduction</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/speaker/IMG_20240913_185825.jpg.jpeg" alt="Speaker Recent" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Career experience sharing session in AI/ML industry</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Knowledge Sharing Gallery -->
+    <section class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-1 bg-ai-yellow"></div>
+                <h2 class="font-space text-3xl font-bold text-ai-dark">
+                    <span class="text-ai-yellow">▸</span> Knowledge Sharing Sessions
+                </h2>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/sharing/IMG-20211115-WA0022.jpg.jpeg" alt="Sharing Session" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Internal sharing session on development best practices</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/sharing/IMG-20211204-WA0038.jpg.jpeg" alt="Team Sharing" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Knowledge transfer session with development team</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/sharing/IMG-20220530-WA0059.jpg.jpeg" alt="Workshop Internal" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Internal workshop introducing new tools and frameworks</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/sharing/IMG-20220620-WA0077.jpg.jpeg" alt="Mentoring" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Mentoring session for junior developers</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/sharing/IMG-20220928-WA0025.jpg.jpeg" alt="Tech Discussion" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Technical discussion on system architecture</p>
+                    </div>
+                </div>
+                <div class="group relative overflow-hidden rounded-lg shadow-lg">
+                    <img src="images/additionals/sharing/IMG-20240826-WA0038.jpg.jpeg" alt="Recent Sharing" class="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-ai-dark to-transparent opacity-0 group-hover:opacity-100 transition-opacity">
+                        <p class="absolute bottom-4 left-4 right-4 text-white text-sm">Sharing experience on LLM implementation in production</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Home -->
+    <section class="py-16 bg-ai-dark text-white">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <a href="index.html" class="inline-flex items-center px-8 py-4 bg-ai-blue text-white font-space font-semibold hover:bg-blue-600 transition-all transform hover:scale-105">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Back to Home
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="font-space font-bold text-xl mb-4 md:mb-0">
+                    <span class="text-ai-blue">&lt;</span>INDRA<span class="text-ai-yellow">/&gt;</span>
+                </div>
+                <div class="text-gray-400 text-sm">
+                    &copy; 2026 Indra Fransiskus Alam. All rights reserved. Built with passion for AI.
+                </div>
+                <div class="flex gap-4 mt-4 md:mt-0">
+                    <a href="https://github.com/simplephi" target="_blank" class="w-10 h-10 bg-ai-gray flex items-center justify-center hover:bg-ai-blue transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/indra-fransiskus-alam-63422414b/" target="_blank" class="w-10 h-10 bg-ai-gray flex items-center justify-center hover:bg-ai-yellow hover:text-ai-dark transition-colors">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Image Modal -->
+    <div id="imageModal" class="fixed inset-0 z-[100] hidden">
+        <!-- Backdrop -->
+        <div class="absolute inset-0 bg-black/90 backdrop-blur-sm" onclick="closeModal()"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative z-10 flex items-center justify-center min-h-screen p-4">
+            <div class="relative max-w-5xl w-full bg-ai-dark rounded-lg overflow-hidden shadow-2xl transform transition-all">
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="absolute top-4 right-4 z-20 w-10 h-10 bg-ai-gray/80 hover:bg-ai-blue rounded-full flex items-center justify-center text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                    </svg>
+                </button>
+                
+                <!-- Image Container -->
+                <div class="relative">
+                    <img id="modalImage" src="" alt="" class="w-full max-h-[70vh] object-contain bg-black">
+                </div>
+                
+                <!-- Description -->
+                <div class="p-6 bg-ai-dark">
+                    <p id="modalDescription" class="text-white text-lg font-inter"></p>
+                </div>
+                
+                <!-- Navigation Buttons -->
+                <button onclick="navigateImage(-1)" class="absolute left-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-ai-gray/80 hover:bg-ai-yellow hover:text-ai-dark rounded-full flex items-center justify-center text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"/>
+                    </svg>
+                </button>
+                <button onclick="navigateImage(1)" class="absolute right-4 top-1/2 -translate-y-1/2 w-12 h-12 bg-ai-gray/80 hover:bg-ai-yellow hover:text-ai-dark rounded-full flex items-center justify-center text-white transition-colors">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Image Modal Functionality
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalDescription = document.getElementById('modalDescription');
+        
+        let allImages = [];
+        let currentIndex = 0;
+        
+        // Collect all gallery images
+        document.querySelectorAll('.group.relative.overflow-hidden').forEach((card, index) => {
+            const img = card.querySelector('img');
+            const desc = card.querySelector('p');
+            
+            if (img && desc) {
+                allImages.push({
+                    src: img.src,
+                    alt: img.alt,
+                    description: desc.textContent
+                });
+                
+                // Make card clickable
+                card.style.cursor = 'pointer';
+                card.addEventListener('click', () => openModal(index));
+            }
+        });
+        
+        function openModal(index) {
+            currentIndex = index;
+            updateModalContent();
+            modal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            modal.classList.add('hidden');
+            document.body.style.overflow = '';
+        }
+        
+        function updateModalContent() {
+            const image = allImages[currentIndex];
+            modalImage.src = image.src;
+            modalImage.alt = image.alt;
+            modalDescription.textContent = image.description;
+        }
+        
+        function navigateImage(direction) {
+            currentIndex += direction;
+            if (currentIndex < 0) currentIndex = allImages.length - 1;
+            if (currentIndex >= allImages.length) currentIndex = 0;
+            updateModalContent();
+        }
+        
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (modal.classList.contains('hidden')) return;
+            
+            if (e.key === 'Escape') closeModal();
+            if (e.key === 'ArrowLeft') navigateImage(-1);
+            if (e.key === 'ArrowRight') navigateImage(1);
+        });
+    </script>
+</body>
+</html>

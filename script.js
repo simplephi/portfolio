@@ -440,9 +440,9 @@ const portfolioData = {
         tech: ['Azure OpenAI', 'Neo4J', 'Node.js', 'Vue.js', 'GraphQL'],
         layout: 1,
         images: [
-            'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=1200',
-            'https://images.unsplash.com/photo-1555255707-c07966088b7b?w=600',
-            'https://images.unsplash.com/photo-1518432031352-d6fc5c10da5a?w=600'
+            'images/semantic node extraction.jpg',
+            'images/semantic node extraction.jpg',
+            'images/semantic node extraction.jpg'
         ],
         paragraph1: 'The Semantic Node Extraction system represents a groundbreaking approach to automated knowledge graph generation, leveraging Azure OpenAI\'s advanced language models to analyze and extract meaningful semantic relationships from unstructured text data. This sophisticated pipeline processes documents in real-time, identifying entities, concepts, and their interconnections with remarkable accuracy. Built on Neo4J\'s powerful graph database infrastructure, the system creates dynamic knowledge networks that enable complex querying and relationship discovery across vast datasets. The Vue.js frontend provides an intuitive visualization interface where users can explore the generated graphs, zoom into specific clusters, and discover hidden patterns within their data.',
         paragraph2: 'The technical architecture employs a multi-stage processing pipeline that begins with text preprocessing and entity recognition, followed by semantic embedding generation and relationship classification. Each extracted node is enriched with contextual metadata, making the resulting knowledge graphs not only comprehensive but also deeply searchable. Integration with existing enterprise systems is facilitated through a robust GraphQL API, enabling seamless data exchange and real-time synchronization. This project has been deployed in financial and research institutions, dramatically reducing the time required for document analysis and information synthesis from weeks to mere hours.'
@@ -580,9 +580,19 @@ const portfolioData = {
         tech: ['Laravel', 'Vue.js', 'MySQL', 'Payment Gateway', 'Docker'],
         layout: 5,
         images: [
-            'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200',
-            'https://images.unsplash.com/photo-1534723452862-4c874018d66d?w=600',
-            'https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600'
+            'images/ecommerce pasar rakyat bank indonesia.jpg',
+            'images/additionals/ecommerce_BI/IMG-20201107-WA0120.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20211008-WA0027.jpg.jpeg'
+        ],
+        galleryImages: [
+            'images/additionals/ecommerce_BI/IMG-20201107-WA0120.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20201107-WA0122.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20201107-WA0124.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20211008-WA0027.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20211008-WA0028.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20211008-WA0031.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20211105-WA0023.jpg.jpeg',
+            'images/additionals/ecommerce_BI/IMG-20211130-WA0017.jpg.jpeg'
         ],
         paragraph1: 'This E-commerce Platform for Traditional Markets represents a transformative Bank Indonesia initiative to digitize local market ecosystems, connecting traditional vendors with modern consumers through a mobile-first marketplace. Built on Laravel\'s robust PHP framework with a Vue.js reactive frontend, the platform enables market traders to create digital storefronts, list products with rich descriptions and photos, and accept electronic payments through integrated payment gateways. The system addresses unique challenges of traditional market commerce including variable pricing, bulk transactions, and cash-on-delivery preferences while introducing vendors to digital business practices. A dedicated onboarding program with simplified interfaces helps traders transition from purely cash-based operations.',
         paragraph2: 'The platform incorporates a sophisticated logistics layer coordinating same-day delivery from market vendors to consumers, with route optimization serving multiple orders efficiently. Financial literacy modules embedded within the app educate vendors on digital payment benefits, tax compliance, and business record-keeping, supporting Bank Indonesia\'s broader financial inclusion objectives. Analytics dashboards help market administrators understand trading patterns, identify growth opportunities, and measure the program\'s economic impact. Since launch, the platform has onboarded over 500 traditional market vendors, processing transactions worth billions of rupiah and creating a replicable model for market digitization across Indonesia.'
@@ -684,6 +694,49 @@ const portfolioData = {
         ],
         paragraph1: 'The Smart City SPBE (Sistem Pemerintahan Berbasis Elektronik) Master Plan provides a comprehensive five-year roadmap for digital government transformation in Southeast Sulawesi province. This strategic document defines the target architecture for integrated e-government services, data sharing protocols, and citizen-centric digital platforms aligned with Indonesia\'s national SPBE framework. The plan establishes governance structures including cross-agency coordination committees, data stewardship roles, and security management organizations essential for successful digital transformation. Detailed gap analysis identifies current system deficiencies and prioritizes investments in infrastructure, applications, and human capacity development.',
         paragraph2: 'The technical architecture section specifies enterprise integration patterns, API standards, and interoperability requirements enabling seamless data exchange across 50+ government agencies. Security and privacy frameworks address data classification, access controls, and incident response procedures compliant with national cybersecurity regulations. The implementation roadmap phases transformation initiatives across three horizons: foundation building, capability expansion, and optimization, with clear milestones and success metrics for each phase. Adopted as the official provincial digital government strategy, this master plan guides annual budgeting decisions and has attracted national recognition as a model for regional SPBE planning, with elements incorporated into guidance documents for other provinces.'
+    },
+    'text-analysis': {
+        title: 'Internal Data Analytics',
+        subtitle: 'LLM-Powered Document Intelligence System',
+        category: 'AI/ML',
+        tech: ['LangChain', 'Azure OpenAI', 'FastAPI', 'ChromaDB', 'Vue.js', 'Docker'],
+        layout: 1,
+        blurImages: [1, 2],
+        images: [
+            'images/text analysis platform 1.png',
+            'images/text analysis platform 2.png',
+            'images/text analysis platform 3.png'
+        ],
+        paragraph1: 'This internal data analytics platform represents a cutting-edge document intelligence system built to transform how the organization processes and extracts insights from vast amounts of unstructured text data. Leveraging LangChain\'s powerful orchestration capabilities combined with Azure OpenAI\'s advanced language models, the platform enables automated document summarization, entity extraction, sentiment analysis, and semantic search across enterprise documents. The system processes thousands of documents daily, including customer communications, financial reports, and regulatory documents, extracting actionable insights that previously required hours of manual review. ChromaDB serves as the vector database backbone, enabling lightning-fast semantic similarity searches across millions of embedded text chunks.',
+        paragraph2: 'The FastAPI backend provides a robust and scalable API layer that handles concurrent requests from multiple internal applications, while the Vue.js frontend offers an intuitive interface for analysts to query documents, review extracted entities, and generate automated reports. The entire system is containerized with Docker for consistent deployment across development, staging, and production environments. Advanced features include multi-language support for Indonesian and English documents, automated classification pipelines, and integration with existing business intelligence tools. The platform has reduced document processing time by 80% and enabled new use cases in risk assessment, compliance monitoring, and customer insight generation that were previously impractical at scale.'
+    },
+    'dodo-hrops': {
+        title: 'HR Operations Automation',
+        subtitle: 'Intelligent HR Operations Automation',
+        category: 'AI/ML',
+        tech: ['Python', 'Azure OpenAI', 'Slack Bot', 'FastAPI', 'PostgreSQL', 'Redis'],
+        layout: 2,
+        images: [
+            'images/dodo hr-ops 1.png',
+            'images/dodo hr-ops 2.png',
+            'images/dodo hr-ops 1.png'
+        ],
+        paragraph1: 'This HR operations automation platform is an intelligent system developed to streamline human resources operations through AI-powered conversational interfaces and automated workflow processing. The system integrates seamlessly with Slack, providing employees with instant access to HR services including leave requests, policy inquiries, benefits information, and onboarding assistance through natural language conversations. Powered by Azure OpenAI\'s GPT models, the system understands context and intent with remarkable accuracy, handling complex multi-turn conversations while maintaining appropriate confidentiality and escalation protocols. The platform has dramatically reduced the HR team\'s administrative burden while improving employee satisfaction through instant, 24/7 service availability.',
+        paragraph2: 'The technical architecture features a FastAPI backend that orchestrates AI inference, business logic, and integrations with HRIS systems. PostgreSQL provides persistent storage for conversation histories, employee data, and analytics, while Redis enables high-performance caching for frequently accessed information. The system implements sophisticated intent classification across 100+ HR-related request types, with automatic routing to appropriate handlers or human agents when needed. Advanced features include multilingual support, sentiment monitoring for employee wellness insights, and automated compliance checks for leave and attendance policies. Since deployment, this platform has processed over 50,000 HR inquiries with a 92% resolution rate without human intervention, establishing a new standard for intelligent workplace automation.'
+    },
+    'koala': {
+        title: 'LLM Gateway Platform',
+        subtitle: 'LLM Gateway & Model Router Platform',
+        category: 'AI/ML',
+        tech: ['Python', 'LiteLLM', 'FastAPI', 'Redis', 'Prometheus', 'Kubernetes'],
+        layout: 3,
+        images: [
+            'images/llm.jpg',
+            'images/llm.jpg',
+            'images/llm.jpg'
+        ],
+        paragraph1: 'This centralized LLM Gateway and Model Router platform provides a unified interface for all AI/ML applications to access various large language models across the organization. Built on LiteLLM\'s powerful abstraction layer, the platform enables seamless switching between different LLM providers including Azure OpenAI, Anthropic Claude, and open-source models without requiring application code changes. The platform implements intelligent load balancing, automatic failover, and cost optimization strategies that route requests to the most appropriate model based on task requirements, latency constraints, and budget considerations. This architectural approach has standardized AI development practices while reducing operational complexity and costs.',
+        paragraph2: 'The FastAPI-powered gateway handles thousands of concurrent requests with sub-100ms routing overhead, while Redis provides high-speed caching for frequently used prompts and responses. Comprehensive observability through Prometheus metrics and custom dashboards enables real-time monitoring of model performance, cost tracking, and usage analytics across all consuming applications. Deployed on Kubernetes for horizontal scalability, the platform automatically adjusts capacity based on demand patterns. Advanced features include prompt templating, response validation, token usage optimization, and automated A/B testing of different model configurations. The platform has become the foundation for AI strategy, enabling rapid experimentation with new models while maintaining production stability and cost control across the organization\'s growing portfolio of AI-powered applications.'
     }
 };
 
@@ -707,8 +760,8 @@ function getLayoutTemplate(layoutNum, project) {
                         </div>
                         <p class="text-gray-300 text-lg leading-relaxed mb-8 drop-cap drop-cap-blue">${project.paragraph1}</p>
                         <div class="gallery-grid gallery-grid-2 mb-8">
-                            <div class="gallery-item"><img src="${project.images[1]}" alt="Project detail" class="rounded"></div>
-                            <div class="gallery-item"><img src="${project.images[2]}" alt="Project detail" class="rounded"></div>
+                            <div class="gallery-item"><img src="${project.images[1]}" alt="Project detail" class="rounded ${project.blurImages?.includes(1) ? 'blur-sm' : ''}"></div>
+                            <div class="gallery-item"><img src="${project.images[2]}" alt="Project detail" class="rounded ${project.blurImages?.includes(2) ? 'blur-sm' : ''}"></div>
                         </div>
                         <p class="text-gray-300 text-lg leading-relaxed">${project.paragraph2}</p>
                     </div>
