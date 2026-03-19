@@ -437,14 +437,14 @@ const portfolioData = {
         title: 'Semantic Node Extraction',
         subtitle: 'Knowledge Graph Generator with AI',
         category: 'AI/ML',
-        tech: ['Azure OpenAI', 'Neo4J', 'Node.js', 'Vue.js', 'GraphQL'],
+        tech: ['GPT Model', 'Neo4J', 'Node.js', 'Vue.js', 'GraphQL'],
         layout: 1,
         images: [
-            'images/semantic node extraction.jpg',
+            'https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=1200',
             'images/semantic node extraction.jpg',
             'images/semantic node extraction.jpg'
         ],
-        paragraph1: 'The Semantic Node Extraction system represents a groundbreaking approach to automated knowledge graph generation, leveraging Azure OpenAI\'s advanced language models to analyze and extract meaningful semantic relationships from unstructured text data. This sophisticated pipeline processes documents in real-time, identifying entities, concepts, and their interconnections with remarkable accuracy. Built on Neo4J\'s powerful graph database infrastructure, the system creates dynamic knowledge networks that enable complex querying and relationship discovery across vast datasets. The Vue.js frontend provides an intuitive visualization interface where users can explore the generated graphs, zoom into specific clusters, and discover hidden patterns within their data.',
+        paragraph1: 'The Semantic Node Extraction system represents a practical approach to automated knowledge graph generation, leveraging GPT-based language models to analyze and extract meaningful semantic relationships from unstructured text data. This pipeline processes documents in real-time, identifying entities, concepts, and their interconnections with high accuracy. Built on Neo4J\'s graph database infrastructure, the system creates dynamic knowledge networks that enable complex querying and relationship discovery across large datasets. The Vue.js frontend provides an intuitive visualization interface where users can explore generated graphs, zoom into clusters, and discover hidden patterns within their data.',
         paragraph2: 'The technical architecture employs a multi-stage processing pipeline that begins with text preprocessing and entity recognition, followed by semantic embedding generation and relationship classification. Each extracted node is enriched with contextual metadata, making the resulting knowledge graphs not only comprehensive but also deeply searchable. Integration with existing enterprise systems is facilitated through a robust GraphQL API, enabling seamless data exchange and real-time synchronization. This project has been deployed in financial and research institutions, dramatically reducing the time required for document analysis and information synthesis from weeks to mere hours.'
     },
     'ar-webxr': {
@@ -524,9 +524,9 @@ const portfolioData = {
         tech: ['Google Maps API', 'Docker', 'PostgreSQL', 'PostGIS', 'Vue.js'],
         layout: 1,
         images: [
-            'https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200',
-            'https://images.unsplash.com/photo-1569336415962-a4bd9f69cd83?w=600',
-            'https://images.unsplash.com/photo-1476973422084-e0fa66ff9456?w=600'
+            'images/GIS Village Mapping.png',
+            'images/GIS Village Mapping (1).png',
+            'images/GIS Village Mapping.png'
         ],
         paragraph1: 'The GIS Village Mapping system provides a comprehensive digital representation of rural settlements, enabling local governments to manage infrastructure, plan development projects, and coordinate disaster response with unprecedented precision. Built on PostgreSQL with PostGIS extensions, the platform stores and queries complex geospatial data including land parcels, road networks, utility infrastructure, and population demographics. The Google Maps API integration delivers familiar interactive maps with custom overlay layers for visualizing administrative boundaries, flood risk zones, and development plans. Village administrators can digitize paper records, update property information, and generate official documents directly from the mapping interface.',
         paragraph2: 'Containerized with Docker for reliable deployment across diverse government IT environments, the system has been rolled out to 336 villages in Southeast Sulawesi province. The architecture supports offline operation for areas with limited connectivity, with automatic synchronization when internet access is restored. Advanced analytics features enable population density analysis, accessibility scoring for public services, and optimization of resource allocation. The project has reduced administrative processing times for land-related requests by 70% and provided critical data for COVID-19 vaccination campaigns and natural disaster relief coordination, demonstrating the transformative potential of GIS technology in rural governance.'
@@ -566,9 +566,9 @@ const portfolioData = {
         tech: ['React Native', 'Vue.js', 'Node.js', 'MongoDB', 'Firebase'],
         layout: 4,
         images: [
-            'https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=1200',
-            'https://images.unsplash.com/photo-1547683905-f686c993aae5?w=600',
-            'https://images.unsplash.com/photo-1504542982118-59308b40fe0c?w=600'
+            'images/Disaster Reporting App.png',
+            'images/Disaster Reporting App.png',
+            'images/Disaster Reporting App.png'
         ],
         paragraph1: 'The Disaster Reporting Application empowers communities to report and respond to emergencies through a streamlined mobile and web platform. Built with React Native for cross-platform mobile deployment and Vue.js for the administrative web portal, the system enables citizens to submit geo-tagged incident reports with photos, videos, and severity classifications. Firebase Cloud Messaging delivers instant push notifications to nearby users and emergency responders, while MongoDB stores the flexible report schema accommodating various disaster types from floods and earthquakes to traffic accidents and infrastructure failures. The intuitive interface guides users through the reporting process with context-sensitive prompts, ensuring complete and actionable information reaches authorities.',
         paragraph2: 'The administrative dashboard aggregates reports into real-time heat maps, enabling emergency coordinators to identify patterns, allocate resources efficiently, and track response progress. Automated severity scoring helps prioritize incoming reports, while verification workflows allow trusted community members and officials to validate report accuracy. Integration with government early warning systems adds authoritative alerts alongside crowdsourced reports, creating a comprehensive situational awareness platform. Deployed during the 2023 flood season in Southeast Sulawesi, the application processed over 3,000 incident reports and coordinated relief efforts for 15,000 affected residents, demonstrating the power of community-driven emergency response technology.'
@@ -623,49 +623,21 @@ const portfolioData = {
             'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600'
         ],
         paragraph1: 'The Moramo Waterfall Tourism platform showcases Indonesia\'s third most beautiful waterfall through an immersive digital experience designed to attract visitors and support local tourism economy. Built with Next.js for optimal performance and SEO, the website presents stunning imagery through Cloudinary\'s advanced image optimization, ensuring fast loading times without compromising visual impact. The Strapi headless CMS empowers tourism officials to update content, manage visitor information, and promote seasonal events without technical assistance. Interactive features include virtual tours, visitor testimonials, and detailed trail maps for the seven-tiered waterfall system that spans across 2 kilometers of pristine forest.',
-        paragraph2: 'The platform integrates comprehensive visitor planning tools including accommodation listings, transportation guides, and local tour operator connections, creating a complete trip planning experience. Real-time visitor count displays help tourists avoid peak crowding, while weather forecasts assist in choosing optimal visit dates. E-ticketing functionality streamlines entrance fee collection and provides valuable visitation data for conservation planning. Since launch, the website has attracted over 500,000 unique visitors and contributed to a 40% increase in tourism revenue for surrounding communities. The project demonstrates how thoughtful digital tourism platforms can balance promotional objectives with sustainable tourism practices that protect natural heritage.'
+        paragraph2: 'The platform is designed to promote Moramo Waterfall through a strong visual experience and clear visitor information. It supports tourism campaigns with fast content updates, reliable performance, and mobile-friendly access for domestic and international audiences.'
     },
     'sso-statistical': {
         title: 'SSO Statistical Platform',
         subtitle: 'Single Sign-On Government Data Portal',
         category: 'WEB',
-        tech: ['OAuth 2.0', 'Laravel', 'Vue.js', 'Redis', 'PostgreSQL'],
+        tech: ['OAuth 2.0', 'Node.js', 'Vue.js', 'Redis', 'PostgreSQL'],
         layout: 2,
         images: [
             'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200',
             'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600',
             'https://images.unsplash.com/photo-1504868584819-f8e8b4b6d7e3?w=600'
         ],
-        paragraph1: 'The SSO Statistical Platform provides a unified authentication gateway for accessing government statistical data across multiple agencies and departments. Implementing OAuth 2.0 standards on Laravel\'s robust backend, the system manages user identities, access permissions, and audit trails for sensitive statistical databases. Redis caching ensures sub-second authentication responses even during peak usage periods, while PostgreSQL stores comprehensive user profiles with role-based access controls. The Vue.js dashboard enables administrators to manage user provisioning, monitor access patterns, and generate compliance reports required for government data governance frameworks.',
-        paragraph2: 'Beyond authentication, the platform aggregates statistical datasets from connected agencies into a searchable catalog, enabling researchers and policymakers to discover relevant data sources across organizational boundaries. Advanced visualization tools transform raw statistics into interactive charts and maps, making complex data accessible to non-technical users. API management features allow approved applications to access statistical data programmatically, fostering innovation while maintaining security controls. The platform serves over 5,000 registered users across provincial government agencies, processing 50,000+ authentication requests daily and providing the foundation for evidence-based policy making in Southeast Sulawesi.'
-    },
-    'simbada': {
-        title: 'SIMBADA System',
-        subtitle: 'Regional Asset Management Platform',
-        category: 'WEB',
-        tech: ['Laravel', 'MySQL', 'jQuery', 'Bootstrap', 'Chart.js'],
-        layout: 3,
-        images: [
-            'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=1200',
-            'https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?w=600',
-            'https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w=600'
-        ],
-        paragraph1: 'SIMBADA (Sistem Informasi Manajemen Barang Daerah) is a comprehensive regional asset management platform developed to track, maintain, and report on government-owned assets across Southeast Sulawesi province. The Laravel-based system manages the complete asset lifecycle from procurement and registration through maintenance, transfers, and eventual disposal. Detailed asset profiles capture specifications, locations, custodians, condition assessments, and depreciation calculations in compliance with government accounting standards. Chart.js visualizations present asset distribution, value summaries, and maintenance schedules in executive dashboards for provincial leadership.',
-        paragraph2: 'The system implements rigorous audit controls with complete change history, digital signatures, and approval workflows ensuring accountability in asset stewardship. Mobile-responsive design enables field officers to conduct physical inventory verification using smartphones, capturing photos and updating asset conditions in real-time. Integration with financial systems automates depreciation entries and generates required reports for annual audits. Managing over 100,000 registered assets with total value exceeding 2 trillion rupiah, SIMBADA has reduced asset discrepancies by 80% and provided the transparency needed for clean audit opinions from government financial auditors.'
-    },
-    'kredivo-bot': {
-        title: 'Kredivo Bot System',
-        subtitle: 'Intelligent Financial Service Automation',
-        category: 'AI/ML',
-        tech: ['Dialogflow', 'Node.js', 'NLP', 'REST API', 'MongoDB'],
-        layout: 4,
-        images: [
-            'https://images.unsplash.com/photo-1531746790731-6c087fecd65a?w=1200',
-            'https://images.unsplash.com/photo-1553729459-efe14ef6055d?w=600',
-            'https://images.unsplash.com/photo-1616514197671-15d99ce7a6f8?w=600'
-        ],
-        paragraph1: 'The Kredivo Bot System delivers intelligent conversational interfaces for financial service automation, handling customer inquiries, loan applications, and account management through natural language interactions. Built on Google Dialogflow\'s NLP engine with custom Node.js fulfillment services, the bot understands Indonesian language nuances including colloquialisms and code-mixing common in financial conversations. Integration with Kredivo\'s core banking APIs enables the bot to perform secure transactions including payment scheduling, limit inquiries, and installment calculations in real-time. Context management maintains conversation state across multiple turns, creating natural dialogue flows that guide users through complex financial processes.',
-        paragraph2: 'Advanced features include intent classification with 95% accuracy across 150+ customer request types, sentiment analysis for escalating frustrated customers to human agents, and proactive notification systems for payment reminders and promotional offers. The MongoDB backend stores conversation histories enabling continuous improvement through analysis of misunderstood intents and unsuccessful conversations. A/B testing framework allows rapid experimentation with response variations to optimize customer satisfaction scores. Processing over 100,000 conversations monthly, the bot has reduced customer service costs by 60% while maintaining satisfaction ratings above 4.5 stars, demonstrating that AI-powered automation can enhance rather than diminish customer experience quality.'
+        paragraph1: 'The SSO Statistical Platform provides a unified authentication gateway for accessing government statistical data across multiple agencies and departments. Implementing OAuth 2.0 standards on a Node.js backend, the system manages user identities, access permissions, and audit trails for sensitive statistical databases. Redis caching ensures sub-second authentication responses during peak usage, while PostgreSQL stores comprehensive user profiles with role-based access controls. The Vue.js dashboard enables administrators to manage user provisioning, monitor access patterns, and generate compliance reports required for government data governance frameworks.',
+        paragraph2: 'Beyond authentication, the platform aggregates statistical datasets from connected agencies into a searchable catalog, enabling researchers and policymakers to discover relevant data sources across organizational boundaries. Advanced visualization tools transform raw statistics into interactive charts and maps, making complex data accessible to non-technical users. API management features allow approved applications to access statistical data programmatically while maintaining security controls. The platform serves over 5,000 registered users across provincial government agencies, processing 1,000+ authentication requests daily and supporting evidence-based policy making in Southeast Sulawesi.'
     },
     'yolov5-dashboard': {
         title: 'YOLOv5 Car Dashboard',
@@ -699,7 +671,7 @@ const portfolioData = {
         title: 'Internal Data Analytics',
         subtitle: 'LLM-Powered Document Intelligence System',
         category: 'AI/ML',
-        tech: ['LangChain', 'Azure OpenAI', 'FastAPI', 'ChromaDB', 'Vue.js', 'Docker'],
+        tech: ['LangChain', 'GPT Model', 'Flask', 'FastAPI', 'Python UI', 'Docker'],
         layout: 1,
         blurImages: [1, 2],
         images: [
@@ -707,36 +679,36 @@ const portfolioData = {
             'images/text analysis platform 2.png',
             'images/text analysis platform 3.png'
         ],
-        paragraph1: 'This internal data analytics platform represents a cutting-edge document intelligence system built to transform how the organization processes and extracts insights from vast amounts of unstructured text data. Leveraging LangChain\'s powerful orchestration capabilities combined with Azure OpenAI\'s advanced language models, the platform enables automated document summarization, entity extraction, sentiment analysis, and semantic search across enterprise documents. The system processes thousands of documents daily, including customer communications, financial reports, and regulatory documents, extracting actionable insights that previously required hours of manual review. ChromaDB serves as the vector database backbone, enabling lightning-fast semantic similarity searches across millions of embedded text chunks.',
-        paragraph2: 'The FastAPI backend provides a robust and scalable API layer that handles concurrent requests from multiple internal applications, while the Vue.js frontend offers an intuitive interface for analysts to query documents, review extracted entities, and generate automated reports. The entire system is containerized with Docker for consistent deployment across development, staging, and production environments. Advanced features include multi-language support for Indonesian and English documents, automated classification pipelines, and integration with existing business intelligence tools. The platform has reduced document processing time by 80% and enabled new use cases in risk assessment, compliance monitoring, and customer insight generation that were previously impractical at scale.'
+        paragraph1: 'This internal data analytics platform is built to transform how the organization processes and extracts insights from large volumes of unstructured text data. Leveraging LangChain orchestration with GPT-based language models, the platform enables automated document summarization, entity extraction, sentiment analysis, and semantic search across enterprise documents. The system processes thousands of documents daily, including customer communications, financial reports, and regulatory documents, extracting actionable insights that previously required hours of manual review.',
+        paragraph2: 'The backend services are built in Python using Flask and FastAPI, and the frontend is also Python-based for a unified development workflow. The system is containerized with Docker for consistent deployment across development, staging, and production environments. Advanced features include multi-language support for Indonesian and English documents, automated classification pipelines, and integration with existing business intelligence tools. The platform has reduced document processing time by 80% and enabled new use cases in risk assessment, compliance monitoring, and customer insight generation at scale.'
     },
     'dodo-hrops': {
         title: 'HR Operations Automation',
         subtitle: 'Intelligent HR Operations Automation',
         category: 'AI/ML',
-        tech: ['Python', 'Azure OpenAI', 'Slack Bot', 'FastAPI', 'PostgreSQL', 'Redis'],
+        tech: ['Python', 'GPT Model', 'Slack Bot', 'FastAPI', 'PostgreSQL', 'Redis'],
         layout: 2,
         images: [
             'images/dodo hr-ops 1.png',
             'images/dodo hr-ops 2.png',
             'images/dodo hr-ops 1.png'
         ],
-        paragraph1: 'This HR operations automation platform is an intelligent system developed to streamline human resources operations through AI-powered conversational interfaces and automated workflow processing. The system integrates seamlessly with Slack, providing employees with instant access to HR services including leave requests, policy inquiries, benefits information, and onboarding assistance through natural language conversations. Powered by Azure OpenAI\'s GPT models, the system understands context and intent with remarkable accuracy, handling complex multi-turn conversations while maintaining appropriate confidentiality and escalation protocols. The platform has dramatically reduced the HR team\'s administrative burden while improving employee satisfaction through instant, 24/7 service availability.',
+        paragraph1: 'This HR operations automation platform is an intelligent system developed to streamline human resources operations through AI-powered conversational interfaces and automated workflow processing. The system integrates seamlessly with Slack, providing employees with instant access to HR services including leave requests, policy inquiries, benefits information, and onboarding assistance through natural language conversations. Powered by GPT models, the system understands context and intent with high accuracy, handling complex multi-turn conversations while maintaining appropriate confidentiality and escalation protocols. The platform has dramatically reduced the HR team\'s administrative burden while improving employee satisfaction through instant, 24/7 service availability.',
         paragraph2: 'The technical architecture features a FastAPI backend that orchestrates AI inference, business logic, and integrations with HRIS systems. PostgreSQL provides persistent storage for conversation histories, employee data, and analytics, while Redis enables high-performance caching for frequently accessed information. The system implements sophisticated intent classification across 100+ HR-related request types, with automatic routing to appropriate handlers or human agents when needed. Advanced features include multilingual support, sentiment monitoring for employee wellness insights, and automated compliance checks for leave and attendance policies. Since deployment, this platform has processed over 50,000 HR inquiries with a 92% resolution rate without human intervention, establishing a new standard for intelligent workplace automation.'
     },
     'koala': {
         title: 'LLM Gateway Platform',
         subtitle: 'LLM Gateway & Model Router Platform',
         category: 'AI/ML',
-        tech: ['Python', 'LiteLLM', 'FastAPI', 'Redis', 'Prometheus', 'Kubernetes'],
+        tech: ['Python', 'Flask', 'FastAPI', 'Redis', 'Kubernetes', 'GPT Model'],
         layout: 3,
         images: [
-            'images/llm.jpg',
-            'images/llm.jpg',
-            'images/llm.jpg'
+            'https://images.unsplash.com/photo-1677442136019-21780ecad995?w=1200',
+            'https://images.unsplash.com/photo-1676299081847-824916de030a?w=600',
+            'https://images.unsplash.com/photo-1686191128892-3f5ca72d4f88?w=600'
         ],
-        paragraph1: 'This centralized LLM Gateway and Model Router platform provides a unified interface for all AI/ML applications to access various large language models across the organization. Built on LiteLLM\'s powerful abstraction layer, the platform enables seamless switching between different LLM providers including Azure OpenAI, Anthropic Claude, and open-source models without requiring application code changes. The platform implements intelligent load balancing, automatic failover, and cost optimization strategies that route requests to the most appropriate model based on task requirements, latency constraints, and budget considerations. This architectural approach has standardized AI development practices while reducing operational complexity and costs.',
-        paragraph2: 'The FastAPI-powered gateway handles thousands of concurrent requests with sub-100ms routing overhead, while Redis provides high-speed caching for frequently used prompts and responses. Comprehensive observability through Prometheus metrics and custom dashboards enables real-time monitoring of model performance, cost tracking, and usage analytics across all consuming applications. Deployed on Kubernetes for horizontal scalability, the platform automatically adjusts capacity based on demand patterns. Advanced features include prompt templating, response validation, token usage optimization, and automated A/B testing of different model configurations. The platform has become the foundation for AI strategy, enabling rapid experimentation with new models while maintaining production stability and cost control across the organization\'s growing portfolio of AI-powered applications.'
+        paragraph1: 'This centralized LLM Gateway and Model Router platform provides a unified interface for all AI/ML applications to access multiple large language models across the organization. Built with Flask and FastAPI services, the platform enables seamless switching between GPT-based models and open-source alternatives without requiring application code changes. The platform implements intelligent load balancing, automatic failover, and cost optimization strategies that route requests to the most appropriate model based on task requirements, latency constraints, and budget considerations. This architectural approach has standardized AI development practices while reducing operational complexity and costs.',
+        paragraph2: 'The gateway handles thousands of concurrent requests with low routing overhead, while Redis provides high-speed caching for frequently used prompts and responses. Deployed on Kubernetes for horizontal scalability, the platform automatically adjusts capacity based on demand patterns. Advanced features include prompt templating, response validation, token usage optimization, and automated A/B testing of different model configurations. The platform has become a core foundation for AI strategy, enabling rapid experimentation with new models while maintaining production stability and cost control across the organization\'s growing portfolio of AI-powered applications.'
     }
 };
 
