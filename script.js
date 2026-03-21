@@ -625,9 +625,9 @@ const portfolioData = {
         tech: ['WordPress', 'PHP', 'MySQL', 'Docker', 'Nginx'],
         layout: 6,
         images: [
-            'https://images.unsplash.com/photo-1496307653780-42ee777d4833?w=1200',
-            'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=600',
-            'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=600'
+            'images/336 Village Websites.png',
+            'images/336 Village Websites 2.png',
+            'images/336 Village Websites 3.png'
         ],
         paragraph1: 'This ambitious digital transformation project delivered professional websites to 336 villages across Southeast Sulawesi province, establishing digital presence and e-governance capabilities for rural communities. Each WordPress-based site was customized with village-specific content including leadership profiles, administrative services, tourism attractions, and economic potentials. The containerized Docker architecture enables centralized management while allowing individual villages to maintain their unique identities. Comprehensive training programs equipped village administrators with content management skills, ensuring sustainable operation and regular updates. The standardized template ensures accessibility compliance and mobile responsiveness while permitting local customization.',
         paragraph2: 'Beyond basic information publishing, the websites integrate practical e-government services including online document requests, official announcement systems, and community feedback channels. A centralized analytics platform tracks visitor engagement across all 336 sites, identifying popular content and underserved information needs. The project has dramatically improved government transparency and citizen engagement, with document request processing times reduced from days to hours. Recognition from provincial and national government digitization initiatives has established this project as a model for rural e-governance, with delegations from other provinces visiting to study the implementation methodology and training approach.'
